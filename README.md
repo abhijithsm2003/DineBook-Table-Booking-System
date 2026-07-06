@@ -86,10 +86,6 @@ The application allows users to register, log in, reserve restaurant tables, and
 
 ## 🎥 Demo
 
-<p align="center">
-  <img src="assets/demo.gif" width="900">
-</p>
-
 ▶️ **Watch Full Demo:** [demo.mp4](assets/demo.mp4)
 
 # 📂 Project Structure
