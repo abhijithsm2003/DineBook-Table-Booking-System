@@ -177,8 +177,3 @@ Only the Booking Owner Can Cancel
 
 - GitHub: https://github.com/abhijithsm2003
 
----
-
-# ⭐ Support
-
-If you like this project, please consider giving it a **⭐ Star** on GitHub.
