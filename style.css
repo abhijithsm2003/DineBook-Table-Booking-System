@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0F172A;
+    color:#fff;
+    min-height:100vh;
+}
+
+
+:root{
+
+    --primary:#FF7A00;
+    --primaryHover:#ff922b;
+
+    --bg:#0F172A;
+
+    --card:#1E293B;
+
+    --input:#162033;
+
+    --border:#334155;
+
+    --text:#ffffff;
+
+    --textLight:#CBD5E1;
+
+    --green:#22C55E;
+
+    --red:#EF4444;
+
+    --yellow:#F59E0B;
+
+}
+
+
+.container{
+
+    max-width:1300px;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+button{
+
+    cursor:pointer;
+
+}
+
+.auth-btn{
+
+    width:100%;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#ff7a00,#ff9d00);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.auth-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 25px rgba(255,122,0,.35);
+
+}
+
+.form-control,
+.form-select{
+
+    height:48px;
+
+    background:var(--input);
+
+    color:white;
+
+    border:1px solid var(--border);
+
+}
+
+.form-control::placeholder{
+
+    color:#94A3B8;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    background:var(--input);
+
+    color:white;
+
+    border-color:var(--primary);
+
+    box-shadow:none;
+
+}
+
+small{
+
+    color:#ef4444;
+
+}
+
+.logo-icon{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#ff7a00,#ff9d00);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+}
+
+.logo-icon i{
+
+    color:white;
+
+    font-size:32px;
+
+}
+
+.logo{
+
+    font-size:36px;
+
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:var(--primary);
+
+}
+
+.logo-text{
+
+    color:#94A3B8;
+
+    letter-spacing:2px;
+
+    font-size:13px;
+
+}
+
+.auth-section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.auth-card{
+
+    background:var(--card);
+
+    padding:45px;
+
+    border-radius:22px;
+
+    border:1px solid var(--border);
+
+    box-shadow:0 10px 40px rgba(0,0,0,.30);
+
+}
+
+.title{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.subtitle{
+
+    color:#94A3B8;
+
+    margin-bottom:30px;
+
+}
+
+.form-label{
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.input-group-text{
+
+    background:var(--input);
+
+    color:white;
+
+    border:1px solid var(--border);
+
+}
+
+.password-toggle{
+
+    cursor:pointer;
+
+}
+
+.bottom-text{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#94A3B8;
+
+}
+
+.bottom-text a{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.bottom-text a:hover{
+
+    color:var(--primaryHover);
+
+}
+
+.forgot-password{
+
+    color:var(--primary);
+
+    font-size:14px;
+
+}
+
+.forgot-password:hover{
+
+    color:var(--primaryHover);
+
+}
+
+
+.dashboard-section{
+
+    min-height:100vh;
+
+    padding:20px 0;
+
+}
+
+.dashboard-title{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.dashboard-title span{
+
+    color:var(--primary);
+
+}
+
+.dashboard-subtitle{
+
+    color:#94A3B8;
+
+    margin-top:10px;
+
+}
+
+
+.dashboard-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:20px;
+
+    height:auto;
+
+}
+
+.card-title{
+
+    font-size:28px;
+
+    font-weight:600;
+
+    margin-bottom:30px;
+
+}
+
+.card-title i{
+
+    color:var(--primary);
+
+    margin-right:8px;
+
+}
+
+
+.dashboard-card .form-control,
+.dashboard-card .form-select{
+
+    margin-bottom:5px;
+
+}
+
+.dashboard-card small{
+
+    display:block;
+
+    margin-bottom:10px;
+
+}
+
+
+.table-card{
+
+    background:#182234;
+
+    border:2px solid var(--border);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.table-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+}
+
+.table-card i{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+
+.table-card h4{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.table-card p{
+
+    margin-bottom:8px;
+
+}
+
+.status{
+
+    font-weight:600;
+
+    font-size:16px;
+
+}
+
+
+.available{
+
+    border-color:var(--green);
+
+}
+
+.available i{
+
+    color:var(--green);
+
+}
+
+.available .status{
+
+    color:var(--green);
+
+}
+
+
+.selected{
+
+    border-color:var(--yellow);
+
+    background:#3D2C13;
+
+}
+
+.selected i{
+
+    color:var(--yellow);
+
+}
+
+.selected .status{
+
+    color:var(--yellow);
+
+}
+
+
+.booked{
+
+    border-color:var(--red);
+
+    background:#3B1D22;
+
+    cursor:not-allowed;
+
+}
+
+.booked i{
+
+    color:var(--red);
+
+}
+
+.booked .status{
+
+    color:var(--red);
+
+}
+
+.summary-box{
+
+    margin-top:18px;
+
+    border-top:1px solid var(--border);
+
+    padding-top:18px;
+
+}
+
+.summary-box h6{
+
+    color:#94A3B8;
+
+    font-weight:500;
+
+}
+
+.summary-box p{
+
+    margin-top:10px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:var(--primary);
+
+}
+
+
+.badge{
+
+    padding:8px 15px;
+
+    font-size:14px;
+
+}
+
+.btn-outline-light{
+
+    height:55px;
+
+    min-width:170px;
+
+    border-radius:12px;
+
+}
+
+.btn-outline-light:hover{
+
+    color:black;
+
+}
+
+.auth-btn{
+
+    min-width:220px;
+
+}
+
+/* ===================================================
+                RESPONSIVE DESIGN
+=================================================== */
+
+/* ==========================================
+   Large Desktop (1400px and above)
+========================================== */
+
+@media (min-width:1400px){
+
+    .container{
+        max-width:1320px;
+    }
+
+}
+
+/* ==========================================
+   Desktop (1200px - 1399px)
+========================================== */
+
+@media (max-width:1399px){
+
+    .dashboard-title{
+        font-size:38px;
+    }
+
+}
+
+/* ==========================================
+   Laptop (992px - 1199px)
+========================================== */
+
+@media (max-width:1199px){
+
+    .dashboard-title{
+        font-size:34px;
+    }
+
+    .card-title{
+        font-size:24px;
+    }
+
+    .table-card{
+        padding:20px;
+    }
+
+    .table-card h4{
+        font-size:20px;
+    }
+
+}
+
+/* ==========================================
+   Tablet (768px - 991px)
+========================================== */
+
+@media (max-width:991px){
+
+    .dashboard-card{
+        margin-bottom:25px;
+    }
+
+    .dashboard-title{
+        font-size:32px;
+    }
+
+    .logo{
+        font-size:32px;
+    }
+
+    .card-title{
+        font-size:22px;
+    }
+
+    .summary-box .col-md-3{
+
+        margin-bottom:20px;
+
+    }
+
+}
+
+/* ==========================================
+   Large Mobile (576px - 767px)
+========================================== */
+
+@media (max-width:767px){
+
+    .dashboard-section{
+
+        padding:20px 0;
+
+    }
+
+    .auth-card{
+
+        padding:30px;
+
+    }
+
+    .dashboard-card{
+
+        padding:20px;
+
+    }
+
+    .dashboard-title{
+
+        font-size:28px;
+
+    }
+
+    .logo{
+
+        font-size:28px;
+
+    }
+
+    .logo-icon{
+
+        width:65px;
+        height:65px;
+
+    }
+
+    .logo-icon i{
+
+        font-size:28px;
+
+    }
+
+    .card-title{
+
+        font-size:20px;
+
+    }
+
+    .table-card{
+
+        padding:18px;
+
+    }
+
+    .table-card i{
+
+        font-size:36px;
+
+    }
+
+    .table-card h4{
+
+        font-size:18px;
+
+    }
+
+    .summary-box{
+
+        text-align:center;
+
+    }
+
+    .auth-btn{
+
+        width:100%;
+
+        min-width:100%;
+
+    }
+
+    #logoutBtn{
+
+        width:100%;
+
+        margin-bottom:20px;
+
+    }
+
+}
+
+/* ==========================================
+   Mobile (Below 576px)
+========================================== */
+
+@media (max-width:575px){
+
+    .dashboard-title{
+
+        font-size:24px;
+
+    }
+
+    .logo{
+
+        font-size:24px;
+
+    }
+
+    .dashboard-subtitle{
+
+        font-size:14px;
+
+    }
+
+    .card-title{
+
+        font-size:18px;
+
+    }
+
+    .table-card{
+
+        padding:15px;
+
+    }
+
+    .table-card h4{
+
+        font-size:16px;
+
+    }
+
+    .table-card i{
+
+        font-size:32px;
+
+    }
+
+    .badge{
+
+        font-size:12px;
+
+        padding:6px 10px;
+
+    }
+
+    .summary-box h6{
+
+        font-size:14px;
+
+    }
+
+    .summary-box p{
+
+        font-size:16px;
+
+    }
+
+    .form-control,
+    .form-select{
+
+        height:48px;
+
+    }
+
+    .auth-btn{
+
+        height:50px;
+
+        font-size:15px;
+
+    }
+
+}
