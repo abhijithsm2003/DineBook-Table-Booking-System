@@ -84,6 +84,10 @@ The application allows users to register, log in, reserve restaurant tables, and
 
 ---
 
+## 🎥 Project Demo
+
+📹 Demo Video: `assets/demo.mp4`
+
 # 📂 Project Structure
 
 ```text
